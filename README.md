@@ -1,8 +1,8 @@
 # OpenClaw Command Center Dashboard
 
-A real-time, 3D可视化 dashboard for monitoring OpenClaw AI agent ecosystems.
+A real-time, 3D dashboard for monitoring OpenClaw AI agent ecosystems.
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=OpenClaw+Command+Center)
+<img width="1920" height="936" alt="image" src="https://github.com/user-attachments/assets/83fd1b4b-9ea0-468f-a374-b5b81fe2f93d" />
 
 ## Features
 
