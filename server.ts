@@ -8,10 +8,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-const PORT = 3333;
-const OPENCLAW_ROOT = '/home/raul/.openclaw';
-const AGENTS_ROOT = join(OPENCLAW_ROOT, 'agents');
-const SKILLS_GLOBAL = '/home/raul/.npm-global/lib/node_modules/openclaw/skills';
+const PORT = parseInt(process.env.PORT || '3333');
+const OPENCLAW_ROOT = process.env.OPENCLAW_ROOT || join(os.homedir(), '.openclaw');
+const AGENTS_ROOT = process.env.OPENCLAW_AGENTS_DIR || join(OPENCLAW_ROOT, 'agents');
+const SKILLS_GLOBAL = process.env.OPENCLAW_GLOBAL_SKILLS || join(os.homedir(), '.npm-global', 'lib', 'node_modules', 'openclaw', 'skills');
 const WORKSPACE_FORGE_ROOT = join(OPENCLAW_ROOT, 'workspace-forge');
 
 type Task = {
